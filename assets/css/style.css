@@ -1,0 +1,372 @@
+/* -------------------------------------- Universal -------------------------------------- */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #777777;
+    background-image: url("../../assets/images/country-quilt.png");
+    margin: 0px;
+}
+
+
+#footerWidth {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+footer {
+    background-color: #666666;
+    height: 60px;
+    border-top: solid 10px;
+    border-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin: 0px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer p {
+    padding-top: 15px;
+}
+
+/*  -------------------------------------- Header -------------------------------------- */
+
+header {
+    background-color: white;
+    border-bottom: solid 2px;
+    border-color: #cccccc;
+    height: 90px;
+    width: 100%;
+}
+
+navbar.navbar-expand-lg.navbar-light.bg-light {
+    width: 960px;
+    margin: 0 auto; 
+}
+
+.navbar-brand {
+    position: relative;
+    left: -1%;
+    top: -10px;
+    background-color: #4aaaa5;
+    color: white;
+    width: 340px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    margin-top: 0px;
+    padding-top: 19px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+.navbar-nav {
+    position: relative;
+    right: -75%;
+    top: -9px;
+}
+
+.navbar-brand h1 {
+    color: white;
+    }
+
+
+
+/*  -------------------------------------- About Me -------------------------------------- */
+
+#sectionHeader {
+    margin-top: 0px; 
+    font-family: 'Georgia', Times, 'Times New Roman', serif; 
+    color: #4aaaa5;
+}
+
+#aboutMe {
+    background-color: #ffffff;
+    border: solid 1px; 
+    border-color: #dddddd;
+    margin: auto;
+    margin-top:50px;
+    margin-bottom: 100px;
+    padding: 35px;
+}
+
+profileSpacer {
+    margin-bottom: 25px;
+}
+
+#profilePic {
+    height:200px; 
+    width: 200px; 
+    float:left; 
+    margin-right:15px; 
+    margin-bottom:15px;
+    margin-top: 10px;
+}
+
+#intro {
+    font-style: italic;
+}
+
+#aboutMe p{
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#aboutMe #profilePic {
+    animation: fadeIn2 2s;
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*  -------------------------------------- Portfolio Page -------------------------------------- */
+
+#Portfolio {
+    background-color: #ffffff;
+    border-color: #dddddd;
+    margin: auto;
+    margin-bottom: 100px;
+
+    padding: 35px;
+}
+
+#profileSpacerPortfolio {
+    margin-bottom: 40px;
+}
+
+.imgPortfolio {
+    position: relative;
+    height: 200px;
+    width: 275px;
+    float: left;
+    margin-bottom: 57px;
+    margin-right: 40px;
+}
+
+.imgPortfolio img {
+    height: 200px;
+    width: 275px;
+    border: 1px solid #ccc 
+}
+
+.imgPortfolio:hover {
+    box-shadow: 2px 2px 2px gray;
+}
+
+.imgTitle {
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    background-color: #4aaaa5;
+    left:0px;
+    top: 140px;
+    height: 35px;
+    width:275px;
+    text-align: center;
+    padding-top:5px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+.imgTitle:hover {
+    color: white;
+    background-color: #3E0CE8;
+    opacity: .9;
+    font-size: 18px;
+}
+
+.imgPortfolio, .imgTitle{
+    animation: bounceIn 2s;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+/*  -------------------------------------- Contact -------------------------------------- */
+
+#submit {
+    background-color: #4aaaa5; 
+    color: white; 
+    width: 115px; 
+    height: 40px; 
+    font-size: 18px; 
+    margin-top: 15px;
+}
+
+#submit:hover {
+    border: 1px solid #4aaaa5;
+}
+
+/*  -------------------------------------- Responsiveness -------------------------------------- */
+
+@media only screen and (max-width: 980px) {
+    body {
+        color:#666666;
+    }  
+    header {
+        background-color: white;
+        border-bottom: solid 2px;
+        border-color: #cccccc;
+        height: 90px;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        position: relative;
+        left: -1%;
+        top: -10px;
+        background-color: #4aaaa5;
+        color: white;
+        width: 340px;
+        height: 90px;
+        text-align: center;
+        float: left;
+        margin-top: 0px;
+        padding-top: 19px;
+        font-family: 'Georgia', Times, 'Times New Roman', serif;
+    }
+
+    .navbar ul{
+        background-color: white;
+        border: 1px solid #cccccc;
+        z-index: 1;
+        box-shadow: 1px 1px 1px grey;
+        padding-left: 10px;
+        width: 150px;
+    }
+
+    #aboutme {
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    body {
+        color:#666666;
+    }
+    header {
+        background-color: white;
+        border-bottom: solid 2px;
+        border-color: #cccccc;
+        height: 90px;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        position: relative;
+        left: -1%;
+        top: -10px;
+        background-color: #4aaaa5;
+        color: white;
+        width: 340px;
+        height: 90px;
+        text-align: center;
+        float: left;
+        margin-top: 0px;
+        padding-top: 19px;
+        font-family: 'Georgia', Times, 'Times New Roman', serif;
+    }
+
+    .navbar ul{
+        background-color: white;
+        border: 1px solid #cccccc;
+        z-index: 1;
+        box-shadow: 1px 1px 1px grey;
+        padding-left: 10px;
+    }
+
+    #aboutme {
+        z-index: 2;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        color:#666666;
+    }
+    
+    header {
+        background-color: white;
+        border-bottom: solid 2px;
+        border-color: #cccccc;
+        height: 150px;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        position: relative;
+        left: -15%;
+        top: -10px;
+        background-color: #4aaaa5;
+        color: white;
+        width: 150%;
+        height: 90px;
+        text-align: center;
+        float: left;
+        
+        margin: 0px auto;
+        padding: 19px 50px 0px 50px;
+        font-family: 'Georgia', Times, 'Times New Roman', serif;
+    }
+
+    .navbar ul{
+        background-color: white;
+        border: 1px solid grey;
+        position: relative;
+        left: 0px;
+        z-index: 1;
+        width: 150px;
+        box-shadow: 1px 1px 1px grey;
+        padding-left: 10px;
+    }
+
+    #aboutMe #Portfolio {
+        z-index: 2;
+    }
+
+    #aboutMe img {
+        float: none;
+    }
+
+  
+}
